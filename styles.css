@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:regular,italic,700,700italic);
+
+@font-face {
+  font-family: "Faune";
+  font-weight: 400;
+  src: url(assets/faune-regular.woff2), url(assets/faune-regular.woff);
+}
+@font-face {
+  font-family: "Faune";
+  font-weight: 400;
+  font-style: italic;
+  src: url(assets/faune-italic.woff2), url(assets/faune-italic.woff);
+}
+@font-face {
+  font-family: "Faune";
+  font-weight: bold;
+  src: url(assets/faune-bold.woff2), url(assets/faune-bold.woff);
+}
+
+body {
+  font-family: Faune, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: #282828;
+  color: white;
+  margin: 0 0 0 360px;
+}
+
+section.options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  background-color: #282828;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 40px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+div.option {
+  margin: 10px 0 0 0;
+}
+div.option-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+label {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+input[name="sentence"] {
+  width: 100%;
+  background-color: #575757;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5px 7px 5px 7px;
+}
+
+select {
+  width: 100%;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+textarea.output {
+  font-size: 64px;
+  width: 100%;
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: "Fira Sans", sans-serif;
+  transition: 0.8s;
+}
+
+div.colors {
+  display: flex;
+}
+
+div.colors div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: border 0.8s;
+}
+
+div.colors div.selected {
+  border: 2px solid rgba(255, 255, 255, 1)
+}
